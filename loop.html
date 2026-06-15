@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Collatz Sequence Analyzer</title>
+</head>
+<body>
+<h1>Collatz Sequence Analyzer</h1>
+<script>
+    alert("hello")
+    let n= Number(prompt("enter a postive integer"));
+    let steps = 0;
+while(n !==1){
+    console.log(n);
+    if (n % 2 === 0){
+         n = n / 2
+    }
+    else {
+        n = 3 * n + 1
+    }
+    steps++
+    console.log(1);
+    console.log( "reached 1 in ${steps}steps.") ;
+    
+    
+if (steps>=500){
+    console.log("stopped after 500 iterations");
+    break;
+    
+}
+}
+
+</script>
+</body>
+</html>
